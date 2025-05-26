@@ -30,6 +30,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
+    
 }
 
 .container {
@@ -67,15 +68,23 @@ a:hover {
 
 /* Header */
 header {
-    background: var(--primary-color);
-    color: var(--text-light);
-    padding: 20px 0;
+    background: transparent; /* transparente inicialmente */
+    color: var(--text-light); /* o puedes mantener white si prefieres */
     position: fixed;
-    width: 100%;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    color: white;
+
+    /* Animaciones para que se oculte/aparezca suavemente */
+    transition: transform 0.3s ease, background 0.3s ease, padding 0.3s ease;
+    transform: translateY(0); /* Asegura que empiece visible */
 }
+
+
+
 
 header .container {
     display: flex;
@@ -145,6 +154,7 @@ header .container {
     justify-content: center;
     text-align: center;
     color: var(--text-light);
+    padding-top: 100px;
 }
 
 .hero-video {
