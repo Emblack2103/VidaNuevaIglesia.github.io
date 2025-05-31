@@ -83,9 +83,6 @@ header {
     transform: translateY(0); /* Asegura que empiece visible */
 }
 
-
-
-
 header .container {
     display: flex;
     justify-content: space-between;
@@ -118,34 +115,8 @@ header .container {
 }
 
 /* Hero Section */
-/*.hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(69, 69, 69, 0.7)), url('/videos/DSC_0631.MOV') no-repeat center center/cover;
-    color: var(--text-light);
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding-top: 80px;
-}
-
-.hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}*/
-
-/* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(69, 69, 69, 0.7));
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(113, 113, 113, 0.7));
     position: relative;
     height: 100vh;
     overflow: hidden;
@@ -276,29 +247,39 @@ h2 {
     font-size: 1.2rem;
 }
 
-/* Testimonios */
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.testimonial {
+/* Vista previa de Spotify */
+.podcast-preview {
+    padding: 4rem 0 8rem 0;
     background: var(--light-color);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    position: relative;
+    text-align: center;
 }
 
-.testimonial p {
-    font-style: italic;
-    margin-bottom: 20px;
-}
-
-.testimonial h4 {
+.podcast-preview h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
     color: var(--secondary-color);
 }
+
+/* Contenedor responsivo para el iframe */
+.spotify-embed {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin:  auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Asegurar que el iframe se ajuste al ancho del contenedor */
+.spotify-embed iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    display: block;
+}
+
+
 
 /* Footer */
 footer {
@@ -341,7 +322,7 @@ footer {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.178);
     border-radius: 50%;
     color: var(--text-light);
     transition: all 0.3s ease;

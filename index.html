@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vida Nueva Iglesia</title>
-    <meta name="description" content="Comunidad de jóvenes cristianos creciendo en la fe">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Comunidad de jóvenes cristianos creciendo en la fe" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
+
 <body>
-    <header>
+    <header id="main-header">
         <div class="container">
             <div class="logo">
                 <a href="index.html">
@@ -38,65 +40,70 @@
             <li><a href="about.html">Nosotros</a></li>
             <li><a href="events.html">Eventos</a></li>
             <li><a href="blog.html">Devocionales</a></li>
-            <li><a href="gallery.html">Galería</a></li>
+            <li><a href="gallery.html">Grupos</a></li>
             <li><a href="contact.html">Contacto</a></li>
         </ul>
     </div>
 
-    <section class="hero">
-        <video class="hero-video" autoplay muted loop>
-            <source src="/assets/DSC_0631.MOV" type="video/mp4">
-        </video>
-        <div class="hero-content">
-            <h2>Viviendo para Cristo</h2>
-            <p>Una comunidad buscando a Dios</p>
-            <a href="about.html" class="btn">Conócenos</a>
-        </div>
-    </section>
+    <main>
+        <section class="hero">
+            <video class="hero-video" autoplay muted loop>
+                <source src="/assets/DSC_0631.MOV" type="video/mp4" />
+            </video>
 
-    <section class="upcoming-events">
-        <div class="container">
-            <h2>Próximos Eventos</h2>
-            <div class="events-grid">
-                <!-- Eventos se cargarán dinámicamente con JS -->
+            <div class="hero-content">
+                <h2>Restaurando Familias</h2>
+                <p>Una comunidad buscando a Dios</p>
+                <a href="about.html" class="btn">Conócenos</a>
             </div>
-            <a href="events.html" class="btn">Ver todos los eventos</a>
-        </div>
-    </section>
+        </section>
 
-    <section class="verse-of-day">
-        <div class="container">
-            <h2>Versículo del Día</h2>
-            <div class="verse-content">
-                <p id="verse-text">"Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree no se pierda, mas tenga vida eterna."</p>
-                <p id="verse-reference">Juan 3:16</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <div class="container">
-            <h2>Testimonios</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial">
-                    <p>"Esta comunidad ha cambiado mi vida. He encontrado amigos verdaderos y mi relación con Dios ha crecido."</p>
-                    <h4>- María, 19 años</h4>
-                </div>
-                <div class="testimonial">
-                    <p>"Los retiros espirituales han sido increíbles. Nunca había sentido tan cerca a Dios como ahora."</p>
-                    <h4>- Carlos, 22 años</h4>
+        <section class="podcast-preview">
+            <div class="container">
+                <h2>Escúchanos en Spotify</h2>
+                <div class="spotify-embed">
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/episode/2Z7pYpVm4eKgw5F3Hi8eH2/video?utm_source=generator&t=17365"
+                        width="496" height="279" frameBorder="0" 
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy">
+                    </iframe>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="verse-of-day">
+            <div class="container">
+                <h2>Versículo del Día</h2>
+                <div class="verse-content">
+                    <p id="verse-text">"Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para
+                        que todo aquel que en él cree no se pierda, mas tenga vida eterna."</p>
+                    <p id="verse-reference">Juan 3:16</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="upcoming-events">
+            <div class="container">
+                <h2>Próximos Eventos</h2>
+                <div class="events-grid">
+                    <!-- Eventos se cargarán dinámicamente con JS -->
+                </div>
+                <a href="events.html" class="btn">Ver todos los eventos</a>
+            </div>
+        </section>
+        
+
+    </main>
 
     <footer>
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col">
+                <!--div class="footer-col">
                     <h3>Lema de la iglesia</h3>
                     <p>Ser discipulos para hacer discipulos.</p>
-                </div>
+                </div-->
                 <div class="footer-col">
                     <h3>Contacto</h3>
                     <p><i class="fas fa-map-marker-alt"></i> Pirules 101, Arboledas, García N.L.</p>
@@ -105,9 +112,12 @@
                 <div class="footer-col">
                     <h3>Redes Sociales</h3>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/share/1Ap9nF4E3A/?mibextid=wwXIfr"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/vida.nueva.iglesia?igsh=NnN5c3hxYXptZHNz&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1Ap9nF4E3A/?mibextid=wwXIfr"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/vida.nueva.iglesia?igsh=NnN5c3hxYXptZHNz&utm_source=qr"><i
+                                class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://open.spotify.com/show/30HMlFlRHESAkDx3wiJL0C?si=be27c215c86e42e5"><i class="fab fa-spotify"></i></a>
                     </div>
                 </div>
             </div>
@@ -119,4 +129,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
